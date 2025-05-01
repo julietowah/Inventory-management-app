@@ -14,3 +14,8 @@ def login_view(request):
     else:
         form = CustomLoginForm()
     return render(request, 'login.html', {'form': form})
+
+def dashboard(request):
+    return render(request,'dashboard.html')
+
+
